@@ -1,0 +1,74 @@
+Problem Statement - 
+
+Pascal's triangle is a triangular arrangement of numbers that holds a special pattern. It is named after the French mathematician Blaise Pascal, although the triangle had been known in various forms prior to his work.
+
+The construction of Pascal's triangle starts with the number 1 at the top. Each subsequent row is constructed by adding the numbers directly above and to the left and right of it. The outermost edges of each row are always 1. The resulting numbers form a triangle shape.
+
+
+___________________________________________________________
+Example - 
+
+        1
+      1   1
+    1   2   1
+  1   3   3   1
+1   4   6   4   1
+
+
+___________________________________________________________
+
+1. Iterative Way Explaination -
+
+
+We have created a new class called RecursiveWay for generating Pascal's triangle using a recursive approach.
+
+Inside the main method, we don't have any code written yet. It's empty for now.
+
+We also have a method called generate that will use recursion to generate Pascal's triangle. However, we haven't written the code for this method yet. We will need to add the necessary code inside the generate method to implement the recursive logic.
+
+We have set up the basic structure of our program, and we will continue working on it by adding the recursive code later.
+
+___________________________________________________________
+
+2. Recursive Way Explaination -
+
+Explanation:
+
+We have created a new class called RecursiveWay for generating Pascal's triangle using a recursive approach.
+
+Inside the main method, we have initialized numRows to 5, which represents the number of rows we want to generate in Pascal's triangle.
+
+We have a nested loop structure. The outer loop iterates through each row, and the inner loop iterates through each element in the row.
+
+Inside the inner loop, we call the generate method, passing the row and column as parameters. This method calculates the value at the given position in Pascal's triangle using a recursive approach.
+
+In the generate method, we first check if the column is either 0 or equal to the row. If so, we return 1 because the first and last elements in each row are always 1.
+
+If the column is not the first or last element, we recursively call the generate method for the element above and to the left, as well as the element above and to the right in the previous row. We then add these two values together to get the value at the current position.
+
+We print the value at each position in Pascal's triangle and move to the next element until we have printed all the rows.
+
+That's all for the code! We have used a recursive approach to generate Pascal's triangle.
+
+
+___________________________________________________________
+3. Memoization Way Explaination -
+We have created a class called RecursiveMemoizationWay to generate Pascal's triangle using a recursive approach with memoization.
+
+Inside the main method, we have initialized numRows to 5, which represents the number of rows we want to generate in Pascal's triangle.
+
+We have a nested loop structure. The outer loop iterates through each row, and the inner loop iterates through each element in the row.
+
+Inside the inner loop, we call the generate method, passing the row and column as parameters. This method calculates the value at the given position in Pascal's triangle using a recursive approach with memoization.
+
+We create a unique key for each position using the row and column values. We check if the memoization map contains a value for that key. If it does, we retrieve the value from the map instead of recalculating it.
+
+If the memoization map does not contain a value for the key, we calculate the value using the recursive logic. If the column is either 0 or equal to the row, we set the value to 1 because the first and last elements in each row are always 1.
+
+If the column is not the first or last element, we recursively call the generate method for the element above and to the left, as well as the element above and to the right in the previous row. We then add these two values together to get the value at the current position.
+
+Once we have the calculated value, we store it in the memoization map using the key for future use.
+
+We print the value at each position in Pascal's triangle and move to the next element until we have printed all the rows.
+
+We have used a recursive approach with memoization to generate Pascal's triangle.

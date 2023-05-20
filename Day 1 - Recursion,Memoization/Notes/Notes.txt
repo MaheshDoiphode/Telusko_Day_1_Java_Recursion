@@ -1,0 +1,45 @@
+Day 1 - Recursion and Memoization
+
+
+
+
+___________________________________________________________
+Recursion ------
+
+Recursion is a programming concept where a function calls itself to solve a problem by breaking it down into smaller, similar subproblems. In other words, recursion involves the process of solving a problem by solving smaller instances of the same problem.
+
+A recursive function typically consists of two parts: a base case and a recursive case. The base case is the termination condition that defines when the recursion should stop, usually when the problem has been reduced to its simplest form. The recursive case defines how the function calls itself with a smaller or simpler version of the problem.
+
+When a recursive function is called, it pushes a new instance of the function onto the call stack, and each instance of the function works on its specific part of the problem. As the base case is reached, the function instances start returning their results, and the stack begins to unwind, combining the results to solve the original problem.
+
+Recursion is often used in scenarios where the problem or algorithm exhibits a recursive structure, such as tree traversal, factorial calculation, or Fibonacci sequence generation. However, it is important to design recursive functions carefully, considering termination conditions and ensuring that they don't result in infinite recursion.
+
+___________________________________________________________
+A Recursion Algorithm --------
+
+A recursive algorithm is an algorithm that solves a problem by breaking it down into smaller instances of the same problem. It involves the use of functions or methods that call themselves within their own code.
+
+General outline of how a recursive algorithm works:
+
+Base Case: The recursive algorithm starts by defining one or more base cases. These are the simplest forms of the problem that can be solved directly without further recursion. The base case(s) typically serve as termination conditions for the recursion.
+
+Recursive Case: After defining the base case(s), the algorithm defines the recursive case. In the recursive case, the algorithm calls itself with a smaller or simpler version of the problem. This step involves reducing the problem size or moving closer to the base case(s).
+
+Recursive Call: Within the recursive case, the algorithm makes a recursive call to itself, passing the modified or reduced problem as the input. This recursive call repeats the process of breaking down the problem into smaller instances until the base case(s) are reached.
+
+Return Values: As the recursive calls propagate, each recursive call returns a value or result. These intermediate results are combined or manipulated to ultimately solve the original problem.
+
+Termination and Result: The recursion continues until the base case(s) are reached. Once the base case(s) are encountered, the recursion stops, and the algorithm returns the final result or output.
+
+___________________________________________________________
+
+
+
+
+
+
+
+
+
+
+
